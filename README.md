@@ -7,6 +7,13 @@ This repository houses the streamlined and minimalist audit report for the Metac
 
 This codebase features a basic contract written in Solidity, the programming language for Ethereum smart contracts. The "StorageVictim" contract has 1 critical vulnerability, 1 medium vulnerability, and 2 informational vulnerabilities.
 
+## Findings/Suggestions 
+
+    Change the compiler version
+    Change the function StorageVictim() public to contructor() public
+    update address owner to address public owner
+    In the store function, directly update storages[msg.sender] without creating a local struct.
+
 ### Getting Started
 
 ## Clone the repository:
